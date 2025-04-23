@@ -1,6 +1,5 @@
 # Patrick
 
-# **2nd Place at Tidal Hackathon Spring 2025** (https://devpost.com/software/patrick-llm-mcp-application)
 
 # To anyone wanting to clone this
 
