@@ -1,18 +1,37 @@
 # Patrick
+#Inspiration
+Context Is All You Need
 
+LLMs are kind of dumb. They excel at predicting the next token, but if you ask them about anything outside of their training set, you're SOL. Recently, this problem has been tackled via function calling, but setting these tools up has proved to be quite the ordeal. Thus, Patrick started with a simple goal: build an agentic, modular, and context-aware office assistant with access to all of your tools and files!
 
-# To anyone wanting to clone this
+That sentence is describing a system—Patrick—that acts as a kind of bridge between LLMs (like GPT) and productivity tools (like Google Docs, Excel, Notion, Slack, etc.). Let's break it down:
 
-Our client is based on an open source MCP client implementation (Dive). The way the directory is structured will not work if you try to clone and run as is. This is because we just dropped the our MCP servers implementations into that mcp_servers folder to meet the devpost submission deadline.
+🔧 "Patrick leverages the Model Context Protocol"
+Model Context Protocol (MCP) is likely a standard or framework that helps large language models safely and efficiently communicate with external tools and data.
 
-The MCP servers can all be launched from the respective index.js files in their directories. You'll need to modify the config file from the client UI to specify the exact path for your machine.
+Think of it as a translator or middle layer that lets the AI understand what's happening in another app (like your calendar or spreadsheet) and respond in a relevant way.
 
-We also want to emphasize that MCP servers can work with any compatible MCP client (there's alot! https://github.com/punkpeye/awesome-mcp-clients). This means that you can use our server implementations with any compatible MCP client (Claude Desktop App seems to be the best established app for this)
+🧠 "to enable real-time, secure communication between LLMs and productivity tools"
+Patrick can:
 
-Also auth for the gmail MCP is a little funny. You have to run the get-token at the root of gmcp directory to generate refresh token and save it in .env along with your client id and secret from google cloud gmail api. Also index.js for gmail MCP only needs to be launched from root of that gmcp folder. Right now our config file runs a shell script and cd's to the directory before starting the server. It's pretty jank...
+Pull data from your tools (e.g., read your emails, notes, to-do lists).
 
+Send actions back (e.g., schedule a meeting, summarize a doc, autofill a table).
 
+And it does this securely, without leaking sensitive info or losing context.
 
+⚙️ "It helps users automate tasks, generate content, analyze data, and streamline workflows"
+Patrick isn't just reading data—it acts like a smart assistant to:
 
+Automate tasks (e.g., “Create weekly report based on this spreadsheet”).
 
-"# Personal_Assistant" 
+Generate content (e.g., “Write a blog post based on these notes”).
+
+Analyze data (e.g., “Explain the trends in this chart”).
+
+Streamline workflows (e.g., “Summarize every new task added to Trello daily”).
+
+🧠 "efficient, context-aware interactions"
+Patrick remembers the context of what you're doing—so it's not just blindly answering prompts.
+
+Example: If you’re editing a Google Doc and say “Turn this into bullet points,” Patrick knows “this” means the current paragraph you're on.
