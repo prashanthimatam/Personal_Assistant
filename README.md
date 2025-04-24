@@ -1,4 +1,4 @@
-# **Smartwork Assitant**
+# **Smartwork Assitant/ InteractAI**
 
 ## **Inspiration**
 
