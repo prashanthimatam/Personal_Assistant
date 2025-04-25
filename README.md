@@ -6,9 +6,9 @@
 
 LLMs are kind of dumb. They excel at predicting the next token, but if you ask them about anything outside of their training set, you're SOL. Recently, this problem has been tackled via function calling, but setting these tools up has proved to be quite the ordeal. Thus, Patrick started with a simple goal: build an agentic, modular, and context-aware office assistant with access to all of your tools and files!
 
-That sentence is describing a system—Patrick—that acts as a kind of bridge between LLMs (like GPT) and productivity tools (like Google Docs, Excel, Notion, Slack, etc.). Let's break it down:
+That sentence is describing a system—that acts as a kind of bridge between LLMs (like GPT) and productivity tools (like Google Docs, Excel, Notion, Slack, etc.). Let's break it down:
 
-🔧 **"Patrick leverages the Model Context Protocol"**  
+🔧 **"leverages the Model Context Protocol"**  
 Model Context Protocol (MCP) is likely a standard or framework that helps large language models safely and efficiently communicate with external tools and data.  
 Think of it as a translator or middle layer that lets the AI understand what's happening in another app (like your calendar or spreadsheet) and respond in a relevant way.
 
